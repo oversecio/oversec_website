@@ -161,6 +161,28 @@
     <p><br>
     </p>
     <h2>Possibilities are endless, again, it works with ANY app!</h2>
+    <table  style="width: 100%"  border="0">
+      <tbody>
+        <tr>
+          <td  style="text-align: center;">LINE-chat<br>
+          </td>
+          <td  style="text-align: center;">SMS Text messaging<br>
+            (encoded as BASE64)<br>
+          </td>
+          <td  style="text-align: center;">Notes-Taking app with PGP encrypted
+            text<br>
+          </td>
+        </tr>
+        <tr>
+          <td  style="text-align: center;"><img  alt=""  src="img/device-2016-05-24-100628.png"><br>
+          </td>
+          <td  style="text-align: center;"><img  alt=""  src="img/device-2016-05-24-100831.png"><br>
+          </td>
+          <td  style="text-align: center;"><img  alt=""  src="img/device-2016-05-24-101446.png"><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
     <p><br>
     </p>
     <p>Oversec encrypts your data either using symmetric keys&nbsp; (with
