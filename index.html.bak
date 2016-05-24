@@ -18,7 +18,7 @@
     <p>End-to-End Encryption was yesterday. Oversec introduces "Eye-to-Eye"
       encryption. Encrypted data is only decrypted when shown on the screen and
       only _while_ it is shown! No cleartext is ever persisted and thus cannot
-      be extracted from the file system or accidentially be uploaded into the
+      be extracted from the file system or accidentally be uploaded into the
       cloud.</p>
     <h2>How it works:</h2>
     <p>Oversec constantly monitors the text on your screen (via the
@@ -26,12 +26,12 @@
       it and then shows the decrypted text as an overlay in place of the
       encrypted text.</p>
     <p>In order to encrypt a text, Oversec shows a button next to any active
-      text-input field. After having entered the cleartext in the input field,
+      text-input field. After having entered the clear-text in the input field,
       pressing this button lets Oversec read the clear-text, encrypt it and put
       back the encrypted text into the input field. It is now ready to be sent
       in the underlying app.</p>
     <p>Oversec also features a unique way of encoding the encrypted messages. It
-      stores the encrypted text in invisible (zero-wodth) chracters and let's
+      stores the encrypted text in invisible (zero-width) characters and let's
       you add decoy text at the end. This way, a message will just e.g. show
       "How are you today" with no visible sign of any encryption, whereas in
       reality it contains an encrypted message "Meet at PB Hotel now".</p>
