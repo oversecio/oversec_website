@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link  rel="stylesheet"  href="css/styles.css">
     <meta  content="text/html; charset=UTF-8"  http-equiv="content-type">
     <title>Oversec</title>
   </head>
   <body>
-    <h1>Oversec is your Encryption-Swiss-Army-Knife.</h1>
+    <h1  style="text-align: center;">Oversec </h1>
+    <h2>The Encryption-Swiss-Army-Knife.</h2>
     <p>Oversec allows you to transparently encrypt and decrypt any text in any
       app - use it to exchange encrypted chat- or email messages or store your
       own encrypted notes on your phone.<br>
@@ -54,10 +56,10 @@
           </td>
         </tr>
         <tr>
-          <td><img  alt=""  src="img/Screenshot_20160524-090508.png"></td>
-          <td><img  alt=""  src="img/Screenshot_20160524-090518.png"><br>
+          <td  style="text-align: center;"><img  alt=""  src="img/Screenshot_20160524-090508.png"></td>
+          <td  style="text-align: center;"><img  alt=""  src="img/Screenshot_20160524-090518.png"><br>
           </td>
-          <td><img  alt=""  src="img/Screenshot_20160524-090526.png"><br>
+          <td  style="text-align: center;"><img  alt=""  src="img/Screenshot_20160524-090526.png"><br>
           </td>
           <td><br>
           </td>
@@ -140,7 +142,8 @@
             parameters<br>
             (Note the "GPG ascii armoured" selection)<br>
           </td>
-          <td  style="text-align: center;">The email now contains a valid PGP encoded<br>
+          <td  style="text-align: center;">The email now contains a valid PGP
+            encoded<br>
             message, and Oversec seamlessly decrypts<br>
             it and show the plain text overlaid.<br>
           </td>
