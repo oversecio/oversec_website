@@ -4,12 +4,24 @@
     <link  rel="stylesheet"  href="css/styles.css">
     <meta  content="text/html; charset=UTF-8"  http-equiv="content-type">
     <title>Oversec</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79497813-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
   </head>
   <body>
     <h1  style="text-align: center;">Oversec </h1>
     <h2  style="text-align: center;">The Encryption-Swiss-Army-Knife.</h2>
     
-<!--
+
     <p>Oversec allows you to transparently encrypt and decrypt any text in any
       app - use it to exchange encrypted chat- or email messages or store your
       own encrypted notes on your phone.<br>
@@ -189,11 +201,13 @@
     </table>
     <p><br>
     </p>
-    <p>Oversec encrypts your data either using symmetric keys&nbsp; (with
-      ChaCha20 cipher) or using asymmetric PGP encryption (making use of the
-      Open-Keychain app).<br>
+    <p>Oversec encrypts your data either using symmetric keys&nbsp; (using
+      ChaCha20 cipher + Poly1305 MAC <sup><a href="#fn1" id="r1">[1]</a></sup>) or using asymmetric PGP encryption (making use of the
+      Open-Keychain app <sup><a href="#fn2" id="r2">[2]</a></sup>).<br>
     </p>
-    <p><br>
+    <p>
+    <i>The encryption related code will be open-sourced soon  (pending some cleanup and documentation.) </i>
+    <br>
     </p>
     <br>
     <p><br>
@@ -201,8 +215,16 @@
   
 
 
+ <section>
+     <p id="fn1"><a href="#r1">[1]</a> 
+       Other symmetric ciphers and MACs, especially the ones included in "BouncyCastle" JCE, can be added with minimal effort.
+     </p>
+     <p id="fn2"><a href="#r2">[2]</a> 
+       Open-Keychain <a href="https://www.openkeychain.org/">Homepage</a> 
+     </p>
 
-    -->
+    </section>
+    
   
 
 
