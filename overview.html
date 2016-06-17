@@ -15,7 +15,7 @@
   ga('send', 'pageview');
 
 </script>
-    
+
   </head>
   <body>
     <h1  style="text-align: center;">Oversec </h1>
@@ -34,6 +34,8 @@
       only _while_ it is shown! No cleartext is ever persisted and thus cannot
       be extracted from the file system or accidentally be uploaded into the
       cloud.</p>
+  	<p>We also carefully designed Oversec so that it doesn't require internet access. Because of that, you can rest assured that no decrypted information can ever leave your device.
+  	</p>
     <h2>How it works:</h2>
     <p>Oversec constantly monitors the text on your screen (via the
       Accessibility API). When it finds an encrypted text, it tries to decrypt
@@ -205,6 +207,7 @@
       ChaCha20 cipher + Poly1305 MAC <sup><a href="#fn1" id="r1">[1]</a></sup>) or using asymmetric PGP encryption (making use of the
       Open-Keychain app <sup><a href="#fn2" id="r2">[2]</a></sup>).<br>
     </p>
+
     <p>
     <i>The encryption related code will be open-sourced soon  (pending some cleanup and documentation.) </i>
     <br>
