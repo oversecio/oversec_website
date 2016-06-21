@@ -45,9 +45,11 @@
       in the underlying app.</p>
     <p>Oversec also features a unique way of encoding the encrypted messages. It
       stores the encrypted text in invisible (zero-width) characters and let's
-      you add decoy text at the end. This way, a message will just e.g. show
-      "How are you today" with no visible sign of any encryption, whereas in
-      reality it contains an encrypted message "Meet at PB Hotel now".</p>
+      you add decoy text at the end. This way, a message will just e.g. show<span
+         style="font-style: italic;"> "Nice weather today isn't it?" </span>with
+      no visible sign of any encryption, whereas in reality it contains an
+      encrypted message<span  style="font-style: italic;"> "Hey Alice. We need
+        to meet!"</span>.</p>
     <h2>Example:</h2>
     <table  style="width: 100%"  border="0">
       <tbody>
@@ -62,9 +64,7 @@
           <td  style="text-align: center;">Another click on the encrypt button <br>
             encrypts the plain text. The encrypted <br>
             text is now stored in invisible characters<br>
-            and the use may enter some decoy text <br>
-            as he wishes.<br>
-          </td>
+            and Bob enters some decoy text.</td>
           <td><br>
           </td>
         </tr>
@@ -86,8 +86,7 @@
     <table  style="width: 100%"  border="0">
       <tbody>
         <tr>
-          <td  style="text-align: center;">User has entered decoy text, message
-            <br>
+          <td  style="text-align: center;">Bob has entered decoy text, message <br>
             is ready to send </td>
           <td  style="text-align: center;">More messages have been sent,<br>
             get decrypted and shown as overlay<br>
@@ -127,10 +126,11 @@
         <tr>
           <td  style="text-align: center;">Oversec is not&nbsp; (yet) active<br>
             or not installed. <br>
-            User sees only decoy text.<br>
+            Alice sees only decoy text.<br>
             No sign of anything secret going on...<br>
           </td>
-          <td  style="text-align: center;">Now Oversec is active and Alice has a<br>
+          <td  style="text-align: center;">Now Oversec is active and Alice has
+            unlocked the<br>
             matching key.<br>
             Oversec decrypts the message and overlays<br>
             the plain text on top.<br>
@@ -167,7 +167,7 @@
           </td>
           <td  style="text-align: center;">Select encryption and encoding
             parameters<br>
-            (Note the "GPG ascii armoured" selection)<br>
+            (Note the "PGP ascii armoured" selection)<br>
           </td>
           <td  style="text-align: center;">The email now contains a valid PGP
             encoded<br>
