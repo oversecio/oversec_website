@@ -1,0 +1,84 @@
+
+/*----------------------------------------------------------------------------------------
+									PURPLE STYLESHEET 
+-----------------------------------------------------------------------------------------*/
+
+blockquote:before,
+code:before,
+.title h2:after,
+.download-btn .btn-slide,
+.bg-color-main,
+.download-btn-alt.invert,
+.owl-pagination .owl-page.active span,
+.navbar-toggle .icon-bar,
+.tags li a:hover,
+.post-content .read-more:hover,
+.soc-list li .icon:hover,
+#preloader .battery:after,
+ #preloader .battery .load-line { 
+	background-color: #E47300; 
+}
+
+a:hover,
+.color,
+.download-btn-alt,
+.download-btn-alt:hover .icon,
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.modal-title .icon,
+.navbar .nav li a:hover,
+.navbar .nav li.active a,
+aside.blog-sidebar .search .btn:hover,
+.tags.hollow li a:hover,
+.facts-list li:hover .icon,
+#subscribe_form button:hover  {
+	color: #E47300; 
+}
+
+aside.blog-sidebar .category ul a:hover { border-bottom: 1px solid #E47300; }
+
+.navbar .nav li a:hover,
+.navbar .nav li.active a {
+	border-bottom: 2px solid #E47300;
+}
+
+@media (max-width: 992px) {
+	.navbar .nav li a:hover,
+	.navbar .nav li.active a{ border-bottom: 1px solid #E47300; }
+}
+
+#preloader .radius .load-point {
+	border-top: 4px solid #E47300;
+}
+
+.round-btn:hover,
+button#contact_submit:hover {
+	border: 2px solid #E47300;
+}
+
+
+#preloader .battery,
+.round-btn-sm:hover,
+.tags.hollow li a:hover,
+.post-pagination li.active a,
+.post-pagination li a:hover {
+	border: 1px solid #E47300;
+}
+
+
+.bg-color-grad{
+	background: #E47300; /* Old browsers */
+	background: -moz-linear-gradient(top,  #E47300 0%, #f4d170 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#E47300), color-stop(100%,#f4d170)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #E47300 0%,#f4d170 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #E47300 0%,#f4d170 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #E47300 0%,#f4d170 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #E47300 0%,#f4d170 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E47300', endColorstr='#f4d170',GradientType=0 ); /* IE6-9 */
+}
+
+.ray {
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(171, 140, 91, .5);
+	-moz-box-shadow: 0px 0px 5px 2px rgba(171, 140, 91, .5);
+	box-shadow: 0px 0px 5px 2px rgba(171, 140, 91, .5);
+}
