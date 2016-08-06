@@ -30,6 +30,16 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79497813-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navMenuCollapse">
@@ -53,13 +63,14 @@
 					<ul class="nav">
 						<li><a href="#features">Features</a> </li>
 						<li><a href="#video">Teaser</a></li>
-						<li><a href="#benefits1">Benefits</a></li>
+						<li><a href="#benefits2">Concept</a></li>
 						<li><a href="#screenshots">Screenshots</a></li>
 
 						<!--
 						<li><a href="#testimonials">Testimonials</a></li>
-						-->
+						
 						<li><a href="#news">News</a></li>
+						-->
 						<li><a href="http://help.oversec.io" target="help">Help</a></li>
 					</ul>
 				</div>
@@ -84,9 +95,9 @@
 					<br/>
 					<br/>
 					<br/>
-					<a class="download-btn android-btn" href="https://play.google.com/apps/testing/io.oversec.one">
-						<div class="btn-slide"></div>
-						<div class="btn-content"><i class="icon soc-icon-android"></i>Download for <b>Android</b></div>
+					<a  href="https://play.google.com/apps/testing/io.oversec.one">
+						<img src="images/google-play-badge.png"/>
+						
 					</a>
 				</div>
 				<div class="col-md-4 hidden-sm hidden-xs">
@@ -132,8 +143,8 @@
 					<ul class="item-list-left item-list-big">
 						<li class="wow fadeInRight">
 							<i class="icon icon-layers"></i>
-							<h3>Universal</h3>
-							<p>Oversec acts as an overlay and thus enables privacy for all other apps. (Except browser-based apps)<br/></p>
+							<h3>Universal Overlay</h3>
+							<p>Transparently encrypts and decrypts any text in any app.<br/>(Except browser-based apps)<br/></p>
 						</li>
 						<li class="wow fadeInRight">
 							<i class="icon icon-key"></i>
@@ -163,7 +174,7 @@
 	
 	
 	<!-- VIDEO BEGIN -->
-	<section id="video" class="bg-color2	" >
+	<section id="video" class="bg-color2" >
 		<div class="container">
 			<div class="title">
 				<h2>Teaser</h2>
@@ -181,84 +192,47 @@
 	
 	
 	<!-- BENEFITS1 BEGIN -->
-	<!--
-	<section id="benefits1" class="img-block-2col">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="title">
-						<h2>OUR Benefits</h2>
-					</div>
-					
-					<ul class="item-list-left">
-						<li>
-							<i class="icon icon-picture color"></i>
-							<h4 class="color">6 Types of Intro</h4>
-							<p>Today Intro is a very important element of any project. 
-It can be named even a face of the project.</p>
-						</li>
-						<li>
-							<i class="icon icon-equalizer color"></i>
-							<h4 class="color">Stunning flexibility</h4>
-							<p>The given template is armed with the number of settings, 
-so you can easily adapt it according to you requirements.</p>
-						</li>
-						<li>
-							<i class="icon icon-bar-chart color"></i>
-							<h4 class="color">Step on the New Level</h4>
-							<p>Innovative solutions and simple mathematically calculated 
-design make it actual for a long time.</p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-5 col-md-offset-1 col-sm-6">
-					<div class="screen-couple-right wow fadeInRightBig">
-						<div class="flare">
-							<img class="base wow" src="images/flare_base.png" alt="" />
-							<img class="shapes wow" src="images/flare_shapes.png" alt="" />
-						</div>
-						<img class="screen above" src="images/screen_couple_above.png" alt="" height="484" width="250" />
-						<img class="screen beyond wow fadeInRight" data-wow-delay="0.5s" src="images/screen_couple_beyond.png" alt="" height="407" width="210" />
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	-->
+
 	<!-- BENEFITS1 END -->
 	
 	
 	
 	
 	<!-- BENEFITS2 BEGIN -->
-	<!--
-	<section id="benefits2" class="img-block-2col bg-color2">
+
+	<section id="benefits2" class="img-block-2col">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-sm-push-6">
 					<div class="title">
-						<h2>The Heart</h2>
+						<h2>How it Works</h2>
 					</div>
-					<p>So, what is the secret of successful template design? First of all, it is its friendliness – both for the template’s owner and for his or her future targeted audience. UX and UI are not just empty phrases for us. It is very important for us that the user could understand correctly the message  your project’s trying to say to him or her. But, correct giving of the information is just a half of success.</p>
-					<p>Emotions that causes your project in visitor are no less important ticket to success. Modern solutions, interesting elements, unique approach to details make this template recognizable and interesting. You project will not look like a template bought in a store and adapted within couple of hours. Oh, no! This is not your case. You obtain qualitative, fascinating and juicy final product that is modern and actual. Qualitative and flexible code lays in base of this great product.</p> 
+					<p>Oversec constantly monitors the text on your screen. When it finds an encrypted text, it tries to decrypt it and then shows the decrypted text as an overlay in place of the encrypted text.
+					</p>
+					<p>In order to encrypt a text, Oversec shows a button next to an active input field. After having entered the secret text, tapping that button makes Oversec read the text, encrypt it and put back the encrypted text into the field. It is now ready to be sent in the subjacent app as usual - the app doesn't even know that it is sending encrypted data!</p>
+					<p>Oversec also features a unique way of encoding encrypted messages. It stores the encrypted text in invisible (zero-width) characters and let's you add decoy text at the end. That way, a message will just show e.g. "The sun is shining today!" with no visible sign of any encryption, whereas in reality it contains a hidden encrypted message.</p>
+					<p>You may also encrypt and send photos through Oversec - its unique camera mode even allows you to take and send an encrypted photo without ever storing the original photo on the device.</p>
 				</div>
 				<div class="col-sm-6 col-sm-pull-6">
+					<br/><br/><br/><br/>
 					<div class="screen-couple-left wow fadeInLeftBig">
-						<div class="fog fog-top wow"></div>
+					<!--	<div class="fog fog-top wow"></div>
+					
 						<div class="fog fog-bottom wow"></div>
-						<img class="screen above" src="images/screen_couple_above_v2.png" alt="" height="484" width="250"/>
-						<img class="screen beyond wow fadeInLeft" data-wow-delay="0.5s" src="images/screen_couple_beyond_v2.png" alt="" height="407" width="210" />
+					-->
+						<img class="screen above" src="images/screen_couple_above.png" alt="" height="484" width="250"/>
+						<img class="screen beyond wow fadeInLeft" data-wow-delay="0.5s" src="images/screen_couple_beyond.png" alt="" height="407" width="210" />
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	-->
+
 	<!-- BENEFITS2 END --> 
 	
 
 	<!-- SCREENSHOTS BEGIN -->
-	<section id="screenshots" class="">
+	<section id="screenshots" class="bg-color2">
 		<div class="container-fluid wow fadeIn">
 			<h2>Screenshots</h2>
 			<div id="screenshots-slider" class="owl-carousel">
@@ -336,51 +310,8 @@ design make it actual for a long time.</p>
 	
 	
 	<!-- NEWS BEGIN -->
-	<!--
-	<section id="news">
-		<div class="container-fluid">
-			<div class="title">
-				<h2>App's News</h2>
-				<p>Here you can find all interesting facts about this app:<br>the last updates, sales, latest things and the developers’ stories.</p>
-			</div>
-			<ul class="news-list">
-				<li class="wow fadeInUp">
-					<h3><a href="single.html">Look for the latest update in coming days.</a></h3>
-					<div class="news-info">
-						<div class="author"><i class="icon icon-user"></i>John Doe</div>
-						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
-						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
-					</div>
-				</li>
-				<li class="wow fadeInUp">
-					<h3><a href="single-no-sidebar.html">The meeting of developers of cross-platform apps.</a></h3>
-					<div class="news-info">
-						<div class="author"><i class="icon icon-user"></i>John Doe</div>
-						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
-						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
-					</div>
-				</li>
-				<li class="wow fadeInUp">
-					<h3><a href="single.html">The new functional sketches.</a></h3>
-					<div class="news-info">
-						<div class="author"><i class="icon icon-user"></i>John Doe</div>
-						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
-						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
-					</div>
-				</li>
-				<li class="wow fadeInUp">
-					<h3><a href="single-no-sidebar.html">Resolving the issue with synchronization in old version.</a></h3>
-					<div class="news-info">
-						<div class="author"><i class="icon icon-user"></i>John Doe</div>
-						<div class="date"><i class="icon icon-clock"></i>16.07.2014</div>
-						<div class="comments"><i class="icon icon-bubble"></i>7 Comments</div>
-					</div>
-				</li>
-			</ul>
-			<a href="blog.html" class="round-btn wow fadeInUp">Older news</a>
-		</div>
-	</section>
-	-->
+
+
 	<!-- NEWS END -->
 	
 	
@@ -394,6 +325,7 @@ design make it actual for a long time.</p>
 		<div class="container-fluid wow fadeInDown">
 			<a href="https://play.google.com/apps/testing/io.oversec.one" class="goto">
 				<h2><i class="icon soc-icon-android"></i>Download App</h2>
+				<img src="images/google-play-badge.png"/>
 			</a>
 		</div>
 		<div class="block-bg" data-stellar-ratio="0.5"></div>
