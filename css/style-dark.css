@@ -1528,7 +1528,7 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 
 .intro-block .logo {
 	display: inline-block;
-	margin: 0 0 120px 0;
+	margin: 0 0 10px 0;
 }
 
 .intro-block .slogan {
@@ -1543,9 +1543,10 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 .intro-block .slogan_2 {
 	color: #fff;
 	line-height: 1.25;
-	margin: 0 10px 70px 10px;
+	margin: 0 5px 70px 5px;
 	text-transform: none;
 	text-shadow: 0px 1px 1px rgba(0,0,0,0.25);
+	letter-spacing: -3px; 
 }
 
 #minimal-intro.intro-block h1.slogan {
@@ -1568,7 +1569,7 @@ aside.blog-sidebar .tag_cloud h4{border:none;}
 
 .intro-block .container { padding: 80px 0; }
 
-.intro-block .logo { margin: 0 0 60px 0; }
+.intro-block .logo { margin: 0 0 20px 0; }
 
 } 
 
