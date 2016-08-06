@@ -126,7 +126,8 @@ $(document).ready(function(){
         itemsDesktopSmall : [1200,3], 
         itemsTablet: [900,2], 
         itemsMobile : [600,1],
-		stopOnHover:true
+		stopOnHover:true,
+        lazyLoad : true
     });
 	
 	
