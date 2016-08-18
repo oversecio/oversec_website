@@ -17,6 +17,7 @@
 <![endif]-->
 
 <!-- CSS -->
+<link rel="stylesheet" href="css/i18n.css"/>
 <link rel="stylesheet" href="css/bootstrap.min.css"/>
 <link rel="stylesheet" href="css/animate.css"/>
 <link rel="stylesheet" href="css/simple-line-icons.css"/>
@@ -38,6 +39,19 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-79497813-1', 'auto');
   ga('send', 'pageview');
+
+
+    if (navigator.browserLanguage) {
+    	switchLanguage(navigator.browserLanguage);
+	}
+	else if (navigator.language) {
+	    switchLanguage(navigator.language);
+	}
+
+	function switchLanguage(fulliso) {
+		 iso = fulliso.substring(0,2)
+	   document.documentElement.lang=iso
+	}
 </script>
 
 </head>
@@ -56,24 +70,58 @@
 	<!-- NAVIGATION BEGIN -->
 	<nav class="navbar navbar-fixed-top navbar-slide">
 			<div class="container_fluid"> 
-				<a class="navbar-brand goto" href="index.html#wrap"> <img src="./images/logo_nav.png" alt="Your logo" height="27" width="56" /> </a>
+				<a class="navbar-brand goto" href="index.html#wrap"> <img src="./images/logo_nav.png" alt="Oversec Logo" height="27" width="56" /> </a>
 				<a class="contact-btn icon-envelope" href="mailto:support@oversec.io"></a>
 				<button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 				<div class="collapse navbar-collapse navMenuCollapse">
 					<ul class="nav">
-						<li><a href="#features">Features</a> </li>
-						<li><a href="#video">Teaser</a></li>
-						<li><a href="#benefits2">Concept</a></li>
-						<li><a href="#screenshots">Screenshots</a></li>
-
-						<!--
-						<li><a href="#testimonials">Testimonials</a></li>
 						
-						<li><a href="#news">News</a></li>
-						-->
-						<li><a href="#social">Stay tuned</a></li>
-						<li><a href="#download">Download</a></li>
-						<li><a href="http://help.oversec.io" target="help">Help</a></li>
+						<li>
+							<a href="#features">
+								 <span data-l11n>Features</span>
+								 <span data-l11n="de">Funktionen</span>
+							</a>
+						</li>
+						<li>
+							<a href="#video">
+								 <span data-l11n>Teaser</span>
+								 <span data-l11n="de">Video</span>
+							</a>
+						</li>
+						<li>
+							<a href="#benefits2">
+								 <span data-l11n>Concept</span>
+								 <span data-l11n="de">Konzept</span>
+							</a>
+						</li>
+						<li>
+							<a href="#screenshots">
+								 <span data-l11n>Screenshots</span>
+								 <span data-l11n="de">Screenshots</span>
+							</a>
+						</li>
+						<li>
+							<a href="#social">
+								 <span data-l11n>Stay tuned</span>
+								 <span data-l11n="de">Netzwerk</span>
+							</a>
+						</li>
+						<li>
+							<a href="#download">
+								 <span data-l11n>Download</span>
+								 <span data-l11n="de">Download</span>
+							</a>
+						</li>
+						<li>
+							<a href="http://help.oversec.io" target="help">
+								 <span data-l11n>Help</span>
+								 <span data-l11n="de">Hilfe</span>
+							</a>
+						</li>
+
+						<li><a href="#" onclick="document.documentElement.lang='de'"><img src="./images/flags/DE.png" alt="deutsch"  /></a> </li>
+						<li><a href="#" onclick="document.documentElement.lang='en'"><img src="./images/flags/GB.png" alt="english"  /></a> </li>
+
 					</ul>
 				</div>
 			</div>
@@ -91,7 +139,8 @@
 					<h1>
 					<span class="slogan">Oversec</span>
 					<br/>
-					<span class="slogan_2"><span class="type"></span> for all Apps</span>
+					<span class="slogan_2" data-l11n><span class="type"></span> for all Apps</span>
+					<span class="slogan_2" data-l11n="de"><span class="type_de"></span> für alle Apps</span>
 					</h1>
 
 					<br/>
@@ -118,26 +167,52 @@
 	<section id="features" class="img-block-3col">
 		<div class="container">
 			<div class="title">
-				<h2>Privacy Features</h2>
-				<p>Some of Oversec's cutting edge privacy features</p>
+				<h2>
+					<span data-l11n>Privacy Features</span>
+					<span data-l11n="de">Sicherheitsmerkmale</span>
+				</h2>
+				<p>
+					<span data-l11n>Some of Oversec's cutting edge privacy features</span>
+					<span data-l11n="de">Oversec's einzigartige Sicherheitsmerkmale auf einen Blick</span>
+				</p>
+				
+				
 			</div>
 			<div class="row">
 				<div class="col-sm-4">
 					<ul class="item-list-right item-list-big">
 						<li class="wow fadeInLeft">
 							<i class="icon icon-eye"></i>
-							<h3>Eye-To-Eye</h3>
-							<p>Messages are decrypted on-the-fly and only while shown on screen - decrypted text is never stored.</p>
+							<h3>
+								<span data-l11n>Eye-To-Eye</span>
+								<span data-l11n="de">Auge-zu-Auge</span>
+							</h3>
+							<p>
+								<span data-l11n>Messages are decrypted on-the-fly and only while shown on screen - decrypted text is never stored.</span>
+								<span data-l11n="de">Nachrichten werden nur entschlüsselt, solange sie sichtbar sind.<br/>Klarext wird niemals gespeichert.</span>
+							</p>
 						</li>
 						<li class="wow fadeInLeft">
 							<i class="icon icon-lock"></i>
-							<h3>Strong Encryption</h3>
-							<p>Symmetric encryption using ChaCha20 Cipher and Poly1305 MAC<br/>with 256 Bit Keys</p>
+							<h3>
+								<span data-l11n>Strong Encryption</span>
+								<span data-l11n="de">Starke Verschlüsselung</span>
+							</h3>
+							<p>
+								<span data-l11n>Symmetric encryption using ChaCha20 Cipher and Poly1305 MAC<br/>with 256 Bit Keys</span>
+								<span data-l11n="de">Symmetrische Kryptographie mit ChaCha20 und Poly1305<br/>(256 Bit Schlüssel)</span>
+							</p>
 						</li>
 						<li class="wow fadeInLeft">
 							<i class="icon icon-envelope-letter"></i>
-							<h3>Decoy</h3>
-							<p>Encrypted data can be hidden behind decoy text, conversations look inconspicuous without Oversec</p>
+							<h3>
+								<span data-l11n>Decoy</span>
+								<span data-l11n="de">Tarnung</span>
+							</h3>
+							<p>
+								<span data-l11n>Encrypted data can be hidden behind decoy text, conversations look inconspicuous without Oversec</span>
+								<span data-l11n="de">Verschlüsselter Text kann hinter unauffälligem Tarn-Text versteckt werden.</span>
+							</p>
 						</li>
 					</ul>
 				</div>
@@ -145,18 +220,36 @@
 					<ul class="item-list-left item-list-big">
 						<li class="wow fadeInRight">
 							<i class="icon icon-layers"></i>
-							<h3>Universal Overlay</h3>
-							<p>Transparently encrypts and decrypts any text in any app.<br/>(Including GMail-App)<br/></p>
+							<h3>
+								<span data-l11n>Universal Overlay</span>
+								<span data-l11n="de">Universelle Überlagerung</span>
+							</h3>
+							<p>
+								<span data-l11n>Transparently encrypts and decrypts any text in any app.<br/>(Including GMail App)<br/></span>
+								<span data-l11n="de">Universelle Ver- und Entschlüsselung in jeder App (auch in der GMail App)</span>
+							</p>
 						</li>
 						<li class="wow fadeInRight">
 							<i class="icon icon-key"></i>
-							<h3>PGP Encryption</h3>
-							<p>Supports strong PGP Public Key Encryption (powered by <a href="https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain" target="playstore">Openkeychain</a>)</p>
+							<h3>
+								<span data-l11n>PGP Encryption</span>
+								<span data-l11n="de">PGP Verschlüsselung</span>
+							</h3>
+							<p>
+								<span data-l11n>Supports strong PGP Public Key Encryption (powered by <a href="https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain" target="playstore">Openkeychain</a>)</span>
+								<span data-l11n="de">Unterstützt starke PGP Public Key Verschlüsselung<br/>(mittels <a href="https://play.google.com/store/apps/details?id=org.sufficientlysecure.keychain" target="playstore">Openkeychain</a>)</span>
+							</p>
 						</li>
 						<li class="wow fadeInRight">
 							<i class="icon icon-book-open"></i>
-							<h3>Open-Source</h3>
-							<p>Protocol and encryption related <a href="https://github.com/oversecio/oversec_crypto" target="github">code</a> is Open-Source, can be verified by 3rd parties.</p>
+							<h3>
+								<span data-l11n>Open-Source</span>
+								<span data-l11n="de">Open-Source</span>
+							</h3>
+							<p>
+								<span data-l11n>Protocol and encryption related <a href="https://github.com/oversecio/oversec_crypto" target="github">code</a> is Open-Source, can be verified by 3rd parties.</span>
+								<span data-l11n="de"><a href="https://github.com/oversecio/oversec_crypto" target="github">Quelltexte</a> für Kryptografie und Protokoll sind OpenSource und können von jedermann verifiziert werden.</span>
+							</p>							
 						</li>
 					</ul>
 				</div>
@@ -179,8 +272,14 @@
 	<section id="video" class="bg-color2" >
 		<div class="container">
 			<div class="title">
-				<h2>Teaser</h2>
-				<p>...in case you wonder what this is all about.</p>
+				<h2>
+					<span data-l11n>Teaser</span>
+					<span data-l11n="de">Vorschau</span>
+				</h2>
+				<p>
+				<span data-l11n>...in case you wonder what this is all about.</span>
+				<span data-l11n="de">Die Funktionsweise von Oversec am Beispiel Whatsapp</span>
+				</p>				
 			</div>
 			<div class="video-container"> 
 				<!-- Video iframe code here -->
@@ -192,9 +291,15 @@
 		<br/>
 		<div class="container">
 			<div class="title">
-				<h2>Encrypted Photos</h2>
-				<p>exchanging private encrypted images</p>
-			</div>
+				<h2>
+					<span data-l11n>Encrypted Photos</span>
+					<span data-l11n="de">Verschlüsselte Fotos</span>
+				</h2>
+				<p>
+				<span data-l11n>Exchanging private encrypted images</span>
+				<span data-l11n="de">Fotos mit Oversec verschlüsseln</span>
+				</p>				
+			</div>		
 			<div class="video-container"> 
 				<!-- Video iframe code here -->
 				<iframe width="854" height="480" src="https://www.youtube.com/embed/laq7SGwiuAw" frameborder="0" allowfullscreen></iframe>
@@ -205,9 +310,15 @@
 		<br/>
 		<div class="container">
 			<div class="title">
-				<h2>PGP Encrypted Emails</h2>
-				<p>Sending and receiving PGP encrypted emails</p>
-			</div>
+				<h2>
+					<span data-l11n>PGP Encrypted Emails</span>
+					<span data-l11n="de">PGP E-Mails</span>
+				</h2>
+				<p>
+				<span data-l11n>Sending and receiving PGP encrypted emails</span>
+				<span data-l11n="de">Senden und empfangen von PGP verschlüsselten E-Mails</span>
+				</p>				
+			</div>	
 			<div class="video-container"> 
 				<!-- Video iframe code here -->
 				<iframe width="854" height="480" src="https://www.youtube.com/embed/jZ_-5X2tiAo" frameborder="0" allowfullscreen></iframe>
@@ -233,13 +344,22 @@
 			<div class="row">
 				<div class="col-sm-6 col-sm-push-6">
 					<div class="title">
-						<h2>How it Works</h2>
+						<h2>
+							<span data-l11n>How it Works</span>
+							<span data-l11n="de">Funktionsweise</span>
+						</h2>
 					</div>
-					<p>Oversec constantly monitors the text on your screen. When it finds an encrypted text, it tries to decrypt it and then shows the decrypted text as an overlay in place of the encrypted text.
-					</p>
-					<p>In order to encrypt a text, Oversec shows a button next to an active input field. After having entered the secret text, tapping that button makes Oversec read the text, encrypt it and put back the encrypted text into the field. It is now ready to be sent in the subjacent app as usual - the app doesn't even know that it is sending encrypted data!</p>
-					<p>Oversec also features a unique way of encoding encrypted messages. It stores the encrypted text in invisible (zero-width) characters and let's you add decoy text at the end. That way, a message will just show e.g. "The sun is shining today!" with no visible sign of any encryption, whereas in reality it contains a hidden encrypted message.</p>
-					<p>You may also encrypt and send photos through Oversec - its unique camera mode even allows you to take and send an encrypted photo without ever storing the original photo on the device.</p>
+					<span data-l11n>
+						<p>Oversec constantly monitors the text on your screen. When it finds an encrypted text, it tries to decrypt it and then shows the decrypted text as an overlay in place of the encrypted text.</p>
+						<p>In order to encrypt a text, Oversec shows a button next to an active input field. After having entered the secret text, tapping that button makes Oversec read the text, encrypt it and put back the encrypted text into the field. It is now ready to be sent in the subjacent app as usual - the app doesn't even know that it is sending encrypted data!</p>
+						<p>Oversec also features a unique way of encoding encrypted messages. It stores the encrypted text in invisible (zero-width) characters and let's you add decoy text at the end. That way, a message will just show e.g. "The sun is shining today!" with no visible sign of any encryption, whereas in reality it contains a hidden encrypted message.</p>
+						<p>You may also encrypt and send photos through Oversec - its unique camera mode even allows you to take and send an encrypted photo without ever storing the original photo on the device.</p>
+					</span>
+					<span data-l11n="de">
+						<p>Oversec überwacht laufend alle Texte auf dem Bildschirm. Wenn ein verschlüsselter Text angezeigt wird, versucht Oversec, diesen zu entschlüsseln und zeigt dann den Klartext als Überlagerung über dem verschlüsselten Text an.</p>
+						<p>Genauso liest Oversec Klartext aus einem Eingabefeld, verschlüsselt diesen und schreibt dann den verschlüsselten Text zurück in das Eingabefeld.</p>
+						<p>Ein derartig verschlüsselter Text kann nun ganz normal in der darunterliegenden App versendet werden - die App bekommt überhaupt nicht mit, dass sie gerade verschlüsselten Text versendet.</p>
+					</span>
 				</div>
 				<div class="col-sm-6 col-sm-pull-6">
 					<br/><br/><br/><br/>
@@ -263,21 +383,40 @@
 	<section id="screenshots" class="bg-color2">
 		<div class="container-fluid wow fadeIn">
 			<h2>Screenshots</h2>
-			<div id="screenshots-slider" class="owl-carousel">
-				<a class="item" href="./images/screen1.png" title="Alice 1"><img class="lazyOwl" data-src="images/preview/screen1.png" alt="screen1" width="250" height="444" /></a>
-				<a class="item" href="./images/screen2.png" title="Alice 2"><img class="lazyOwl" data-src="images/preview/screen2.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen3.png" title="Alice 3"><img class="lazyOwl" data-src="images/preview/screen3.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen4.png" title="Bob 4"><img class="lazyOwl" data-src="images/preview/screen4.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen5.png" title="Bob 5"><img class="lazyOwl" data-src="images/preview/screen5.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen6.png" title="Bob 6"><img class="lazyOwl" data-src="images/preview/screen6.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen7.png" title="Alice 7"><img class="lazyOwl" data-src="images/preview/screen7.png" alt="screen1" width="250" height="444"/></a>
-				<a class="item" href="./images/screen8.png" title="Alice 8"><img class="lazyOwl" data-src="images/preview/screen8.png" alt="screen1" width="250" height="444"/></a>
+			<span data-l11n>
+				<div id="screenshots-slider" class="owl-carousel">
+					<a class="item" href="./images/screen1.png" title="Alice 1">
+						<img class="lazyOwl" data-src="images/preview/screen1.png" alt="screen1" width="250" height="444" />
+					</a>
+					<a class="item" href="./images/screen2.png" title="Alice 2">
+						<img class="lazyOwl" data-src="images/preview/screen2.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen3.png" title="Alice 3">
+						<img class="lazyOwl" data-src="images/preview/screen3.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen4.png" title="Bob 4">
+						<img class="lazyOwl" data-src="images/preview/screen4.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen5.png" title="Bob 5">
+						<img class="lazyOwl" data-src="images/preview/screen5.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen6.png" title="Bob 6">
+						<img class="lazyOwl" data-src="images/preview/screen6.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen7.png" title="Alice 7">
+						<img class="lazyOwl" data-src="images/preview/screen7.png" alt="screen1" width="250" height="444"/>
+					</a>		
+					<a class="item" href="./images/screen8.png" title="Alice 8">
+						<img class="lazyOwl" data-src="images/preview/screen8.png" alt="screen1" width="250" height="444"/>
+					</a>			
+					<a class="item" href="./images/screen_enc_params.png" title="Encryption Parameters PGP">
+						<img class="lazyOwl" data-src="images/preview/screen_enc_params.png" alt="Encryption Parameters PGP" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/screen_enc_params_sym.png" title="Encryption Parameters Symmetric">
+						<img class="lazyOwl" data-src="images/preview/screen_enc_params_sym.png" alt="Encryption Parameters Symmetric" width="250" height="444"/>
+					</a>
 
-				<a class="item" href="./images/screen_enc_params.png" title="Encryption Parameters PGP"><img class="lazyOwl" data-src="images/preview/screen_enc_params.png" alt="Encryption Parameters PGP" width="250" height="444"/></a>
 
-				<a class="item" href="./images/screen_enc_params_sym.png" title="Encryption Parameters Symmetric"><img class="lazyOwl" data-src="images/preview/screen_enc_params_sym.png" alt="Encryption Parameters Symmetric" width="250" height="444"/></a>
-
-				
 				<a class="item" href="./images/screen_enc_info.png" title="Encryption Info"><img class="lazyOwl" data-src="images/preview/screen_enc_info.png" alt="Encryption Info" width="250" height="444"/></a>
 
 				<a class="item" href="./images/screen_key_details.png" title="Key Details"><img class="lazyOwl" data-src="images/preview/screen_key_details.png" alt="Key Details" width="250" height="444"/></a>
@@ -308,7 +447,78 @@
 
 				<a class="item" href="./images/screen_sms.png" title="SMS / texts"><img class="lazyOwl" data-src="images/preview/screen_sms.png" alt="SMS / texts" width="250" height="444"/></a>
 				<a class="item" href="./images/screen_line.png" title="LINE chat"><img class="lazyOwl" data-src="images/preview/screen_line.png" alt="LINE chat" width="250" height="444"/></a>
-			</div>
+
+				</div>
+			</span>
+			<span data-l11n="de">
+				<div id="screenshots-slider_DE" class="owl-carousel">
+					<a class="item" href="./images/de/screen1.png" title="Alice 1">
+						<img class="lazyOwl" data-src="images/de/preview/screen1.png" alt="screen1" width="250" height="444" />
+					</a>
+					<a class="item" href="./images/de/screen2.png" title="Alice 2">
+						<img class="lazyOwl" data-src="images/de/preview/screen2.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen3.png" title="Alice 3">
+						<img class="lazyOwl" data-src="images/de/preview/screen3.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen4.png" title="Bob 4">
+						<img class="lazyOwl" data-src="images/de/preview/screen4.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen5.png" title="Bob 5">
+						<img class="lazyOwl" data-src="images/de/preview/screen5.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen6.png" title="Bob 6">
+						<img class="lazyOwl" data-src="images/de/preview/screen6.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen7.png" title="Alice 7">
+						<img class="lazyOwl" data-src="images/de/preview/screen7.png" alt="screen1" width="250" height="444"/>
+					</a>		
+					<a class="item" href="./images/de/screen8.png" title="Alice 8">
+						<img class="lazyOwl" data-src="images/de/preview/screen8.png" alt="screen1" width="250" height="444"/>
+					</a>
+					<a class="item" href="./images/de/screen_enc_params.png" title="Verschlüsselungsparameter PGP">
+						<img class="lazyOwl" data-src="images/de/preview/screen_enc_params.png" alt="Encryption Parameters PGP" width="250" height="444"/>
+					</a>		
+					<a class="item" href="./images/de/screen_enc_params_sym.png" title="Verschlüsselungsparameter symmetrisch">
+						<img class="lazyOwl" data-src="images/de/preview/screen_enc_params_sym.png" alt="Encryption Parameters Symmetric" width="250" height="444"/>
+					</a>		
+
+<!-- TODO PROVIDE DE LOCALIZED VERSIONS OF THOSE SCREENSHOTS -->
+
+				<a class="item" href="./images/screen_enc_info.png" title="Encryption Info"><img class="lazyOwl" data-src="images/preview/screen_enc_info.png" alt="Encryption Info" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_key_details.png" title="Key Details"><img class="lazyOwl" data-src="images/preview/screen_key_details.png" alt="Key Details" width="250" height="444"/></a>
+
+
+				<a class="item" href="./images/screen_decoy_content.png" title="Decoy Content"><img class="lazyOwl" data-src="images/preview/screen_decoy_content.png" alt="Decoy Content" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_apps.png" title="Apps Configuration"><img class="lazyOwl" data-src="images/preview/screen_apps.png" alt="Apps Configuration" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_visual.png" title="Visual Configuration"><img class="lazyOwl" data-src="images/preview/screen_visual.png" alt="Visual Configuration" width="250" height="444"/></a>
+
+
+				<a class="item" href="./images/screen_image_encrypted.png" title="Encrypted Image"><img class="lazyOwl" data-src="images/preview/screen_image_encrypted.png" alt="Encrypted Image" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_image_decrypted.png" title="Decrypted Image"><img class="lazyOwl" data-src="images/preview/screen_image_decrypted.png" alt="Decrypted Image" width="250" height="444"/></a>
+
+
+				<a class="item" href="./images/screen_alice_encrypted.png" title="Encrypted Email"><img class="lazyOwl" data-src="images/preview/screen_alice_encrypted.png" alt="Encrypted Email" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_alice_reply_decrypted.png" title="Decrypted Email"><img class="lazyOwl" data-src="images/preview/screen_alice_reply_decrypted.png" alt="Decrypted Email" width="250" height="444"/></a>
+
+
+				<a class="item" href="./images/screen_notes_plain.png" title="Notes Plaintext"><img class="lazyOwl" data-src="images/preview/screen_notes_plain.png" alt="Notes Plaintext" width="250" height="444"/></a>
+				<a class="item" href="./images/screen_notes_enc.png" title="Notes Encrypted"><img class="lazyOwl" data-src="images/preview/screen_notes_enc.png" alt="Notes Encrypted" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_email_plain.png" title="Email Plaintext"><img class="lazyOwl" data-src="images/preview/screen_email_plain.png" alt="Email Plaintext" width="250" height="444"/></a>
+				<a class="item" href="./images/screen_email_enc.png" title="Email Encrypted"><img class="lazyOwl" data-src="images/preview/screen_email_enc.png" alt="Email Encrypted" width="250" height="444"/></a>
+
+				<a class="item" href="./images/screen_sms.png" title="SMS / texts"><img class="lazyOwl" data-src="images/preview/screen_sms.png" alt="SMS / texts" width="250" height="444"/></a>
+				<a class="item" href="./images/screen_line.png" title="LINE chat"><img class="lazyOwl" data-src="images/preview/screen_line.png" alt="LINE chat" width="250" height="444"/></a>
+
+				</div>
+			</span>			
+
 		</div>
 	</section>
 
@@ -370,8 +580,14 @@
 	<section id="social" class="bg-color-main">
 		<div class="container-fluid">
 			<div class="title">
-				<h2>Stay tuned</h2>
-				<p>Follow us in social networks.</p>
+				<h2>
+					<span data-l11n>Stay tuned</span>
+					<span data-l11n="de">Stay tuned</span>
+				</h2>
+				<p>
+					<span data-l11n>Follow us in social networks.</span>
+					<span data-l11n="de">Folge uns im Netz</span>
+				</p>
 			</div>
 			
 			<ul class="soc-list wow flipInX">
@@ -389,7 +605,11 @@
 	<section id="download" class="bg-color2">
 		<div class="container-fluid wow fadeInDown">
 			<a href="https://play.google.com/store/apps/details?id=io.oversec.one" class="goto">
-				<h2><i class="icon soc-icon-android"></i>Download App</h2>
+				<h2>
+					<i class="icon soc-icon-android"></i>
+					<span data-l11n>Download App</span>
+					<span data-l11n="de">App Downloaden</span>
+				</h2>
 				<img src="images/google-play-badge.png"/>
 			</a>
 		</div>

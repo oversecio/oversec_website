@@ -99,6 +99,13 @@ $(document).ready(function(){
         loopCount: false,
     });
 
+    $(".type_de").typed({
+        strings: ["Datenschutz", "Verschlüsselung", "Sicherheit"],
+        typeSpeed: 200,
+        backDelay:6000,
+        loop: true,
+        loopCount: false,
+    });
 
 	
 	
@@ -129,7 +136,16 @@ $(document).ready(function(){
 		stopOnHover:true,
         lazyLoad : true
     });
-	
+	var owl = $("#screenshots-slider_DE");
+    owl.owlCarousel({
+        items : 5, 
+        itemsDesktop : [1400,4], 
+        itemsDesktopSmall : [1200,3], 
+        itemsTablet: [900,2], 
+        itemsMobile : [600,1],
+        stopOnHover:true,
+        lazyLoad : true
+    });
 	
 	
 //------------------------------------------------------------------------
@@ -156,7 +172,13 @@ $(document).ready(function(){
         }
     });
 
-
+    $('#screenshots-slider_DE').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
 	
 //------------------------------------------------------------------------
 //					SUBSCRIBE FORM VALIDATION'S SETTINGS

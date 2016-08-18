@@ -1,0 +1,12 @@
+/* extra CSS rules for i18n */
+[data-l11n=de] {
+    display: none;
+}
+
+:lang(de) > [data-l11n] {
+    display: none;
+}
+
+:lang(de) > [data-l11n=de] {
+    display: inline;
+}
