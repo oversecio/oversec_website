@@ -67,11 +67,16 @@ var trackOutboundLink = function(url) {
 }
 </script>
 <script>
-<!-- rewite playstore links -->
-$( 'playstorelink' ).attr( 'href', function(index, value) {
-  return value + '?'+location.search;
-});
-  
+
+function getPlayStoreUrl() {
+	utm = "";
+	s = location.search;
+	if (s.length()>1) {
+		utm = "&"+s.substring(1)
+	}
+	return 'https://play.google.com/store/apps/details?id=io.oversec.one'+utm
+}
+
 </script>
 </head>
 
@@ -173,7 +178,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 						<br/>
 						<br/>
 						<a  href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 							<img src="images/google-play-badge.png"/>
 							
 						</a>
@@ -203,7 +208,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 	
 
 			<a href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 			<img src="images/google-play-badge.png"/>
 		</a>
 
@@ -242,7 +247,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 		
 		<div class="container-fluid wow fadeInDown">
 				<a class="goto" href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 				<img src="images/google-play-badge.png"/>
 			</a>
 		</div>
@@ -423,7 +428,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 
 		<div class="container-fluid wow fadeInDown">
 				<a class="goto" href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 				<img src="images/google-play-badge.png"/>
 			</a>
 		</div>
@@ -472,7 +477,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 
 		<div class="container-fluid wow fadeInDown">
 				<a class="goto" href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 				<img src="images/google-play-badge.png"/>
 			</a>
 		</div>
@@ -511,7 +516,7 @@ $( 'playstorelink' ).attr( 'href', function(index, value) {
 	<section id="download" class="bg-color2">
 		<div class="container-fluid wow fadeInDown">
 				<a class="goto" href="https://play.google.com/store/apps/details?id=io.oversec.one"
-							onclick="trackOutboundLink('https://play.google.com/store/apps/details?id=io.oversec.one'+location.search); return false;">
+							onclick="trackOutboundLink(getPlayStoreUrl()); return false;">
 				<h2>
 					<i class="icon soc-icon-android"></i>
 					<span data-l11n>Download App</span>
