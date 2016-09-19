@@ -65,6 +65,12 @@ var trackOutboundLink = function(url) {
      'hitCallback': function(){document.location = url;}
    });
 }
+var trackMainsiteLink = function(url) {
+   ga('send', 'event', 'mainsite', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
 </script>
 <script>
 
@@ -77,10 +83,15 @@ function getPlayStoreUrl() {
 	utm = "";
 	s = location.search;
 	if (s.length>1) {
-				utm = "&referrer="+s.substring(1).replace("=","%3D")
+				utm = "&referrer="+s.substring(1).replaceAll("=","%3D")
 	}
 	return 'https://play.google.com/store/apps/details?id=io.oversec.one'+utm
 }
+function getMainWebsiteUrl() {
+	s = location.search;
+	return '/?'+s;
+}
+
 
 </script>
 </head>
@@ -189,7 +200,8 @@ function getPlayStoreUrl() {
 						</a>
 						<br/>
 						<br/>
-						<a href="/index.html">
+						<a href="/index.html"
+						onclick="trackMainsiteLink(getMainWebsiteUrl()); return false;">
 									<span data-l11n>&lt;Visit Main Website&gt;</span>
 									<span data-l11n="de">&lt;Zur Hauptseite&gt;</span>	
 							</a>
@@ -218,7 +230,8 @@ function getPlayStoreUrl() {
 		</a>
 
 	<h3>
-			<a href="/index.html">
+			<a href="/index.html"
+					onclick="trackMainsiteLink(getMainWebsiteUrl()); return false;">
 					<span data-l11n>&lt;Visit Main Website&gt;</span>
 					<span data-l11n="de">&lt;Zur Hauptseite&gt;</span>	
 			</a>
