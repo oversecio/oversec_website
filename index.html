@@ -73,9 +73,9 @@ function getPlayStoreUrl() {
 	utm = "";
 	s = location.search;
 	if (s.length>1) {
-		utm = "&"+s.substring(1)
+		utm = "&referrer="+s.substring(1).replace("=","%3D")
 	}
-	return 'https://play.google.com/store/apps/details?id=io.oversec.one'+utm
+	return 'https://play.google.com/store/apps/details?id=io.oversec.one='+utm
 }
 
 </script>
