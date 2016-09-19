@@ -69,11 +69,16 @@ var trackOutboundLink = function(url) {
 </script>
 <script>
 
+String.prototype.replaceAll = function (find, replace) {
+    var str = this;
+    return str.replace(new RegExp(find, 'g'), replace);
+};
+
 function getPlayStoreUrl() {
 	utm = "";
 	s = location.search;
 	if (s.length>1) {
-		utm = "&referrer="+s.substring(1).replace("=","%3D")
+		utm = "&referrer="+s.substring(1).replaceAll("=","%3D")
 	}
 	return 'https://play.google.com/store/apps/details?id=io.oversec.one'+utm
 }
