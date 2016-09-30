@@ -2559,3 +2559,17 @@ footer { padding: 80px 0; }
 #shortcodes .download-btn-alt{ margin:2px 0;}
 
 
+/*----------------------------------------------------------------------------------------
+										TABLE
+----------------------------------------------------------------------------------------*/
+.w3-table-all {color:#FFF}
+.w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}
+.w3-table-all{border:1px solid #666}
+.w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #666}
+.w3-striped tbody tr:nth-child(even){background-color:#333}
+.w3-table-all tr:nth-child(odd){background-color:#333}
+.w3-table-all tr:nth-child(even){background-color:#222}
+.w3-hoverable tbody tr:hover,.w3-ul.w3-hoverable li:hover{background-color:#ccc}
+.w3-centered tr th,.w3-centered tr td{text-align:center}
+.w3-table td,.w3-table th,.w3-table-all td,.w3-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
