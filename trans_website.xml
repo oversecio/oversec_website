@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="web__teaser">Teaser</string>
+    <string name="web__features">Features</string>
+    <string name="web__concept">Concept</string>
+    <string name="web__sceenshots">Screenshots</string>
+    <string name="web__videos">Videos</string>
+    <string name="web__apps">Apps</string>
+    <string name="web__social">Stay tuned</string>
+    <string name="web__news">News</string>
+    <string name="web__download">Download</string>
+    <string name="web__help">Help</string>
+    <string name="web__slogan">Privacy for all Apps</string>
+    <string name="web__sect_teaser_text">...in case you wonder what this is all about.</string>
+    <string name="web__sect_features_title">Privacy Features</string>
+    <string name="web__sect_features_text">Some of Oversec's cutting edge privacy features</string>
+    <string name="web__sect_features_eye2eye_title">Eye-To-Eye</string>
+    <string name="web__sect_features_eye2eye_text">Messages are decrypted on-the-fly and only while shown on screen - decrypted text is never stored.</string>
+    <string name="web__sect_features_strongenc_title">Strong Encryption</string>
+    <string name="web__sect_features_strongenc_text">Symmetric encryption using ChaCha20 Cipher and Poly1305 MAC<br/>with 256 Bit Keys</string>
+    <string name="web__sect_features_decoy_title">Decoy</string>
+    <string name="web__sect_features_decoy_text">Encrypted data can be hidden behind decoy text, conversations look inconspicuous without Oversec</string>
+    <string name="web__sect_features_uniovl_title">Universal Overlay</string>
+    <string name="web__sect_features_uniovl_text">Transparently encrypts and decrypts any text in any app.<br/>(Including GMail App)<br/></string>
+    <string name="web__sect_features_pgp_title">PGP Encryption</string>
+    <string name="web__sect_features_pgp_text">Supports strong PGP Public Key Encryption (powered by xxx)</string>
+    <string name="web__sect_features_oss_title">Open-Source</string>
+    <string name="web__sect_features_oss_text">Protocol and encryption related <a>code</a> is Open-Source, can be verified by 3rd parties.</string>    
+    <string name="web__sect_how_title">How it Works</string>
+    <string name="web__sect_how_text"><![CDATA[
+<p>Oversec constantly monitors the text on your screen. When it finds an encrypted text, it tries to decrypt it and then shows the decrypted text as an overlay in place of the encrypted text.</p>
+<p>In order to encrypt a text, Oversec shows a button next to an active input field. After having entered the secret text, tapping that button makes Oversec read the text, encrypt it and put back the encrypted text into the field. It is now ready to be sent in the subjacent app as usual - the app doesn't even know that it is sending encrypted data!</p>
+<p>Oversec also features a unique way of encoding encrypted messages. It stores the encrypted text in invisible (zero-width) characters and let's you add decoy text at the end. That way, a message will just show e.g. "The sun is shining today!" with no visible sign of any encryption, whereas in reality it contains a hidden encrypted message.</p>
+<p>You may also encrypt and send photos through Oversec - its unique camera mode even allows you to take and send an encrypted photo without ever storing the original photo on the device.</p>
+]]></string>
+    <string name="web__sect_photos_title">Encrypted Photos</string>
+    <string name="web__sect_photos_text">Exchanging private encrypted images</string>
+    <string name="web__sect_pgp_title">PGP Encrypted Emails</string>
+    <string name="web__sect_pgp_text">Sending and receiving PGP encrypted emails</string>
+
+    <string name="web__sect_compat_title">Compatible Apps</string>
+    <string name="web__sect_compat_text">Basically Oversec works with <b>ANY</b> app, but here's an <i>incomplete</i> list of popular apps we have verified to work with Oversec:</string>
+    <string name="web__sect_compat_colheader_app">App</string>
+    <string name="web__sect_compat_colheader_app">Status</string>
+    <string name="web__sect_compat_colheader_app">Remarks</string>
+    <string name="web__sect_compat_x_moreinfo">More info...</string>
+    <string name="web__sect_compat_x_customsettings">Custom setting required.</string>
+    <string name="web__sect_compat_x_other">If an app is not listed here, please just give it a try, Oversec is designed to work with ANY app!</string>
+    <string name="web__sect_news_title">Oversec News</string>
+    <string name="web__sect_news_text">All the latests updates...</string>
+    <string name="web__sect_social_text">Follow us in social networks.</string>
+    <string name="web__sect_dl_title">Download App</string>
+    <string name="web__sect_dl_text">No Playstore? No Problem!  Direct APK download</string>
+    <string name="web__sect__title"></string>
+    <string name="web__sect__text"></string>
+
+
+    <string name="web__"></string>
+    <string name="web__"><![CDATA[
+ 
+]]></string>
+
+
+  </resources>
